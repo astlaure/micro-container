@@ -26,6 +26,12 @@ const MicroFrontend = (props) => {
                     script.crossOrigin = '';
                     script.src = `${host}${manifest[`${name}.js`]}`;
                     script.onload = mountMicroFrontend;
+
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = `${host}${manifest[`${name}.css`]}`;
+
+                    document.head.appendChild(link);
                     document.head.appendChild(script);
                 });
         }
