@@ -13,3 +13,17 @@ sudo a2enmod proxy_http
 	ProxyPassReverse / http://localhost:3000/
 </VirtualHost>
 ```
+
+## TEAMS
+
+### Team Container (Team Glue)
+1. Manage everything shared:\
+container frontend\
+shared api / orchestrator\
+caches
+
+### Team Client
+1. Manage everything client related
+
+### Team Policy
+1. Manage everything policy related
