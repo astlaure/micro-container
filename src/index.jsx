@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import './services';
 import Navbar from "./components/navbar";
 import ClientRoute from "./routes/client-route";
 import PolicyRoute from "./routes/policy-route";
