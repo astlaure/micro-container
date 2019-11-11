@@ -40,7 +40,7 @@ const MicroFrontend = (props) => {
     }, []);
 
     return (
-        <div id={`${name}-container`} />
+        <div id={`${name}-container`} style={{ border: '1px solid black' }} />
     )
 };
 
